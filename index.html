@@ -103,20 +103,18 @@
       }
 
       ol {
-        counter-reset: item;
-        list-style: none;
+        padding-left: 15px;
       }
 
       ol li {
         padding: 8px 0;
+        padding-left: 8px;
       }
 
-      ol li::before {
-        content: counter(item) ".";
-        counter-increment: item;
-        padding-right: 15px;
+      ol li::marker {
         color: hsl(14, 45%, 36%);
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: bold;
       }
 
       /* For styling bullet and number list */
